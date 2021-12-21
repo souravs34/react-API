@@ -2,9 +2,9 @@ import { useRef, useContext } from "react";
 import { useHistory } from "react-router-dom";
 
 import AuthContext from "../../store/auth-context";
-import classes from "./ProfileForm.module.css";
+import classes from "./PasswordForm.module.css";
 
-const ProfileForm = () => {
+const PasswordForm = () => {
   const newPasswordInputRef = useRef();
   const authCtx = useContext(AuthContext);
   const history = useHistory();
@@ -53,4 +53,4 @@ const ProfileForm = () => {
   );
 };
 
-export default ProfileForm;
+export default PasswordForm;

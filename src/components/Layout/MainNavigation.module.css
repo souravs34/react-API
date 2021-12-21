@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 5rem;
-  background-color: #38015c;
+  background-color: #476a2e;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
 }
 
 .logo {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 2rem;
   color: white;
   margin: 0;
@@ -46,10 +46,10 @@
 }
 
 .header a:hover {
-  color: #c291e2;
+  color: rgb(223, 204, 204);
 }
 
 .header button:hover {
-  background-color: #c291e2;
+  background-color: #fff;
   color: #38015c;
 }

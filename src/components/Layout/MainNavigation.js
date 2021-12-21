@@ -1,13 +1,13 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import { GiHamburgerMenu } from "react-icons/gi";
+//import { GiHamburgerMenu } from "react-icons/gi";
 import AuthContext from "../../store/auth-context";
 import classes from "./MainNavigation.module.css";
 import "./NavbarNavigation.css";
 
 const MainNavigation = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
+  //const [showMediaIcons, setShowMediaIcons] = useState(false);
   const authCtx = useContext(AuthContext);
 
   const isLoggedIn = authCtx.isLoggedIn;
@@ -23,7 +23,7 @@ const MainNavigation = () => {
         <div className={classes.logo}>React Auth</div>
       </Link>
       <nav
-        className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}
+      //className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}
       >
         <ul>
           {!isLoggedIn && (
@@ -33,7 +33,13 @@ const MainNavigation = () => {
           )}
           {isLoggedIn && (
             <li>
-              <Link to="/profile">Profile</Link>
+              <Link to="/allcocktails">All Cocktails</Link>
+            </li>
+          )}
+
+          {isLoggedIn && (
+            <li>
+              <Link to="/changepassword">Change Password</Link>
             </li>
           )}
           {isLoggedIn && (
@@ -42,13 +48,13 @@ const MainNavigation = () => {
             </li>
           )}
         </ul>
-        <div className="social-media">
+        {/* <div className="social-media">
           <div className="hamburger-menu">
             <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
               <GiHamburgerMenu />
             </a>
           </div>
-        </div>
+        </div> */}
       </nav>
     </header>
   );

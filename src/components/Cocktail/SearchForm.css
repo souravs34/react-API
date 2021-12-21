@@ -1,0 +1,69 @@
+/* 
+====== 
+Variables 
+======
+*/
+:root {
+  --primaryLightColor: #d4e6a5;
+
+  --primaryDarkColor: #c02c03;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBackground: #f1f5f8;
+  --mainOverlay: rgba(35, 10, 36, 0.4);
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainRed: #bd0303;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.3rem;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --mainBorderRadius: 0.25rem;
+  --smallWidth: 85vw;
+  --maxWidth: 40rem;
+  --fullWidth: 1170px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* 
+====== 
+Form
+======
+*/
+.search {
+  margin-top: 4rem;
+  padding-bottom: 0;
+}
+
+.search-form {
+  margin: 0 auto;
+  max-width: 55rem;
+  background: var(--mainWhite);
+  padding: 4rem 3.5rem;
+  text-transform: capitalize;
+  border-radius: var(--mainBorderRadius);
+  box-shadow: var(--lightShadow);
+}
+
+.form-control-search label {
+  display: block;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.35rem;
+  color: #476a2e;
+  font-size: 1.35rem;
+}
+.form-control-search input {
+  width: 100%;
+  border: none;
+  border-color: transparent;
+  background: var(--mainBackground);
+  border-radius: var(--mainBorderRadius);
+  padding: 0.5rem;
+  font-size: 2rem;
+}
