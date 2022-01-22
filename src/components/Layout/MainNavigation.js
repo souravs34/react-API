@@ -20,7 +20,7 @@ const MainNavigation = () => {
   return (
     <header className={classes.header}>
       <Link to="/">
-        <div className={classes.logo}>React Auth</div>
+        <div className={classes.logo}>Ｓ♢ＵＲΛＶ</div>
       </Link>
       <nav
       //className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}

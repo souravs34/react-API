@@ -13,6 +13,10 @@ const PasswordForm = () => {
     event.preventDefault();
 
     const enteredNewPassword = newPasswordInputRef.current.value;
+    if (enteredNewPassword.length === 0) {
+      alert("Enter Valid Password");
+      return;
+    }
 
     // add validation
 
@@ -46,9 +50,10 @@ const PasswordForm = () => {
           ref={newPasswordInputRef}
         />
       </div>
-      <div className={classes.action}>
-        <button>Change Password</button>
-      </div>
+
+      <button className="btn btn-primary btn-details action">
+        Change Password
+      </button>
     </form>
   );
 };
