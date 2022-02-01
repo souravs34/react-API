@@ -131,11 +131,19 @@ Cocktail
   grid-template-rows: auto 1fr;
   border-radius: var(--mainBorderRadius);
 }
+@media screen and (max-width: 576px) {
+  .card {
+    width: 29%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
 .card:hover {
   box-shadow: var(--darkShadow);
 }
 .card img {
-  height: 30rem;
+  height: 25rem;
   object-fit: cover;
   border-top-left-radius: var(--mainBorderRadius);
   border-top-right-radius: var(--mainBorderRadius);

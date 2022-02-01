@@ -15,6 +15,11 @@
   color: white;
   margin: 0;
 }
+@media screen and (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+}
 
 .header ul {
   list-style: none;
